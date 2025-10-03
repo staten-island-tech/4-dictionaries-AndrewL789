@@ -8,26 +8,54 @@ yang=[
 },
 {
 
-    'name':'Xiyang door knob',
+    'name':'Xiyang Door Knob',
     'price':'5.99',
     'ratings':'10',
     'desc':'A brass door knob hand carved into the shape of Xiyangs head'
 },
 {
-    'name':'Xiyang tv remote',
+    'name':'Xiyang TV Remote',
     'price':'4.99',
     'ratings':'4',
     'desc':'A tv remote in the shape of Xiyangs head (batteries not included)'
 },
 {
-    'name':'Xiyang soap holder',
+    'name':'Xiyang Soap Holder',
     'price':'11.99',
     'ratings':'10',
     'desc':'A plastic carve out of Xiyang with a compartment to store bars of soap'
 },
-{
-    'name':'Xiyang tapistry'
-    'price':'34.99'
-    'rating':'8'
-}
+
 ]
+
+
+for xi in yang:
+    xi['price'] = float(xi['price']) 
+    xi['ratings'] = float(xi['ratings'])
+
+print('In the Xiyang store we have:')
+for index, xi in enumerate(yang):
+    print(index, ":", xi['name'])
+
+""" ti = int(input("what item would you like to buy? Please input the index number :"))
+
+print(f" you have bought a {yang[ti]['name']} for {yang[ti]['price']}!!! ")
+ """
+
+
+# second half, make a cart
+
+cart = [] 
+total = []
+done = False
+
+while done == False:
+    ti = int(input('please input the index num of what you wanna add to your cart :')) 
+    item = yang[ti]['name']
+    cart.append(item)
+    price = yang[ti]['price']
+    total.append(price) 
+
+    if ti == :
+        print(f"You have bought {cart}")
+        print(f" your total amounts to {float(sum.total)}") 
