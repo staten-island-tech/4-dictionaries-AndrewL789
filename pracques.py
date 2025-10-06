@@ -19,16 +19,43 @@ def lang(x):
     
     print(bleh) 
     
+#possion = input('gimmie words.:') 
 
 
 
 
-
-lang("Mason part à la chasse aux poissons non vidés à l'aube.")
+#lang(possion)
 
 
 #parking 
 
+import random
+
+options = ["c", "."]
+
+spots = int(input("how many lots are being dealt with?:")) 
 
 
 
+yest = []
+for i in range (spots):
+    t = random.choice(options) 
+    yest.append(t)
+print(yest) 
+
+
+tday = []
+for i in range (spots):
+    t = random.choice(options) 
+    tday.append(t)
+print(tday)
+        
+
+
+count = 0 
+for i in range(spots):
+    if yest[i] == "c"and tday[i] == "c":
+        count += 1
+    else:
+        count = 0  
+print(count)
