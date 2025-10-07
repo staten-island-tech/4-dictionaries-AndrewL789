@@ -50,12 +50,13 @@ total = []
 done = False
 
 while done == False:
-    ti = int(input('please input the index num of what you wanna add to your cart :')) 
-    item = yang[ti]['name']
+    ti = (input('please input the index num of what you wanna add to your cart :')) 
+    
+    item = yang[int(ti)]['name']
     cart.append(item)
-    price = yang[ti]['price']
+    price = yang[int(ti)]['price']
     total.append(price) 
-
     if ti == :
+        done = True
         print(f"You have bought {cart}")
         print(f" your total amounts to {float(sum.total)}") 
