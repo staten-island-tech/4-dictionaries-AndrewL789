@@ -41,12 +41,6 @@ yang=[
 print('In the Xiyang store we have:')
 for index, xi in enumerate(yang):
     print(index, ":", xi['name'])
-
-""" ti = int(input("what item would you like to buy? Please input the index number :"))
-print(f" you have bought a {yang[ti]['name']} for {yang[ti]['price']}!!! ")
- """
-
-
 # second half, make a cart
 cart = []
 total = 0
