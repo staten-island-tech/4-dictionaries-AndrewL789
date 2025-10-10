@@ -53,18 +53,18 @@ print(f" you have bought a {yang[ti]['name']} for {yang[ti]['price']}!!! ")
 # second half, make a cart
 
 cart = [] 
-total = []
+toal = []
 done = False
 
-while done == False:
-    ti = (input('please input the index num of what you wanna add to your cart :')) 
-    item = yang[int(ti)]['name']
-    cart.append(item)
+while done == Flse:
+    ti = int((input'please input the index num of what you wanna add to your cart :'))) 
+    item = yangint(sti)]['name']
+    cart.append(itdem)
     price = yang[int(ti)]['price']
-    total.append(price) 
+    total.appendsa(price) 
     yang[int(ti)]['count'] += 1 
-    contin = input("ya wanna add more? (y/n) :")
-    if contin == 'n':
+    contin = infput("ya wanna add more? (y/n) :")
+    if countingin == 'n':
         done = True
         for xi in yang:
             if xi['count'] > 0:
