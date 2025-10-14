@@ -35,6 +35,12 @@ yang=[
     'ratings':10,
     'desc':"A high end monitor for professional buiness pruposes, just in the shape of a 2000% magnification of Xiyang's left calf",
     'count':0 
+},
+{
+    'name':"The Yang Cam",
+    'price':149.99
+    'rating' 100
+    'desc':
 }
 ]
 
@@ -44,16 +50,18 @@ for index, xi in enumerate(yang):
 # second half, make a cart
 
 cart = [] 
-total = []
+total = 0
 done = False
 
 while done == False:
-    ti = (input('please input the index num of what you wanna add to your cart :')) 
-    item = yang[int(ti)]['name']
-    cart.append(item)
-    price = yang[int(ti)]['price']
-    total.append(price) 
-    yang[int(ti)]['count'] += 1 
+    ti = input('Name what you want to buy :')
+    for xi in yang:
+        if ti.lower() == xi['name'].lower():
+            print('confirmed')
+            amt = int(input("amt? :"))
+            price = xi['price'] * amt
+            total += price
+            xi['count'] += amt 
     contin = input("ya wanna add more? (y/n) :")
     if contin == 'n':
         done = True
@@ -64,17 +72,3 @@ while done == False:
         print(f"your total is ${round(total)}")
     elif contin == 'y':
         done = False
-    
-#if buy via name is needed use:
-"""done2= False
-cart2 = [] 
-while done2 == False:
-    ti = input('balh :')
-    for xi in yang:
-        if ti == xi['name']:
-            print('confirmed') 
-            cart2.append(ti)
-    if ti == "no":
-        done2 = True
-        print(f'you have bought {cart2}') """
-
