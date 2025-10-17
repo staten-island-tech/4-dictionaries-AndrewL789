@@ -8,7 +8,6 @@ yang=[
     'count':0
 },
 {
-
     'name':'Xiyang Door Knob',
     'price':5.99,
     'ratings':10,
@@ -69,7 +68,8 @@ yang=[
     'name': 'Xiyang booze',
     'price' :599.99,
     'ratings' : 8,
-    'desc' : 'Xiyang booze is top grade wine, fermented for atleast 13 mil'
+    'desc' : '32 gallons of top grade Xiyang branded wine, fermented for atleast 13 millenia in the depths of Mongolia.',
+    'count' : 0 
 }
 ]
 
@@ -80,7 +80,7 @@ for index, xi in enumerate(yang):
 
 cart = [] 
 total = 0
-done = False
+done = False 
 while done == False:
     ti = input('Name what you want to buy :')
     for xi in yang:
