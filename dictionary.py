@@ -70,6 +70,13 @@ yang=[
     'ratings' : 8,
     'desc' : '32 gallons of top grade Xiyang branded wine, fermented for atleast 13 millenia in the depths of Mongolia.',
     'count' : 0 
+},
+{
+    'name':'Xiyang jukebox',
+    'price':234.99,
+    'ratings': 3,
+    'desc' : "An antique vase from the Shang Dynasty transformed into a modern day Jukebox, every tune played with this jukebox will be in the sound of Xiyang's voice",
+    'count': 0
 }
 ]
 
